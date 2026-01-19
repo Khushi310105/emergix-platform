@@ -1,8 +1,18 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 40px;
   background-color: #f5f7fa;
+} */
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9ff;
+}
+
+.container {
+  padding: 40px;
 }
 
 h1 {
@@ -91,5 +101,35 @@ hr {
   font-size: 14px;
   color: #555;
 }
+
+.card {
+  border-left: 6px solid #8eb6df;
+}
+
+.card.emergency {
+  border-left-color: #d32f2f;
+}
+
+.card.care {
+  border-left-color: #388e3c;
+}
+
+
+.btn-emergency {
+  background-color: #d32f2f;
+}
+
+.btn-emergency:hover {
+  background-color: #b71c1c;
+}
+
+.btn-hospital {
+  background-color: #1976d2;
+}
+
+.btn-care {
+  background-color: #388e3c;
+}
+
 
 
