@@ -1,42 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Live Ambulance Tracking – EMERGIX</title>
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family: Arial; background-color:#e3f2fd; padding:40px;">
-<div class="navbar">
-  <b>EMERGIX</b>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="emergency.html">Emergency</a>
-    <a href="hospital.html">Hospital</a>
-    <a href="elderly-care.html">Elderly Care</a>
+<body>
+  <div class="navbar">
+    <b>🚑 EMERGIX</b>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="emergency.html">Emergency</a>
+      <a href="hospital.html">Hospital</a>
+      <a href="elderly-care.html">Elderly Care</a>
+    </div>
   </div>
-</div>
 
-  <h1 style="color:#1976d2;">📍 Live Ambulance Tracking</h1>
+  <div class="container">
+    <div class="hero-text">
+      <h1>📍 Live Ambulance Tracking</h1>
+      <p>Real-time ambulance location and status updates for your peace of mind.</p>
+    </div>
 
-  <p>Ambulance is en route to the hospital.</p>
+    <hr>
 
-  <hr>
+    <div class="form-section">
+      <h2 style="color: #333; text-align: center; margin-bottom: 30px;">🚑 Ambulance Status</h2>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+        <div>
+          <h4 style="color: #1976d2;">Current Location:</h4>
+          <p style="color: #333; font-size: 18px;">1.8 km away</p>
+        </div>
+        <div>
+          <h4 style="color: #1976d2;">Speed:</h4>
+          <p style="color: #333; font-size: 18px;">45 km/h</p>
+        </div>
+        <div>
+          <h4 style="color: #1976d2;">ETA:</h4>
+          <p style="color: #333; font-size: 18px;">6 minutes</p>
+        </div>
+        <div>
+          <h4 style="color: #1976d2;">Status:</h4>
+          <p style="color: #388e3c; font-size: 18px;"><strong>On the way</strong></p>
+        </div>
+      </div>
 
-  <h3>🚑 Ambulance Status</h3>
-  <p><b>Current Location:</b> 1.8 km away</p>
-  <p><b>Speed:</b> 45 km/h</p>
-  <p><b>ETA:</b> 6 minutes</p>
+      <hr style="margin: 30px 0; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);">
 
-  <hr>
+      <h3 style="color: #333; text-align: center; margin-bottom: 20px;">📡 Live Status Updates</h3>
+      
+      <ul style="list-style: none; padding: 0; margin-bottom: 30px;">
+        <li style="padding: 12px; margin-bottom: 10px; background: #f0f4f8; border-radius: 8px; border-left: 4px solid #388e3c;">
+          ✔ <strong>Ambulance dispatched</strong> - 2:15 PM
+        </li>
+        <li style="padding: 12px; margin-bottom: 10px; background: #f0f4f8; border-radius: 8px; border-left: 4px solid #388e3c;">
+          ✔ <strong>Patient onboard</strong> - 2:18 PM
+        </li>
+        <li style="padding: 12px; margin-bottom: 10px; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+          ➡ <strong>Heading towards hospital</strong> - In progress
+        </li>
+      </ul>
 
-  <h3>📡 Live Status Updates</h3>
-  <ul>
-    <li>✔ Ambulance dispatched</li>
-    <li>✔ Patient onboard</li>
-    <li>➡ Heading towards hospital</li>
-  </ul>
+      <div style="text-align: center; padding: 20px; background: #e8f5e9; border-radius: 8px; border-left: 4px solid #388e3c; margin-bottom: 20px;">
+        <p style="color: #388e3c; font-size: 16px; margin: 0;"><strong>Status: Moving...</strong></p>
+        <p style="color: #555; font-size: 14px; margin: 5px 0 0 0;">Updates refresh every 10 seconds</p>
+      </div>
 
-  <p style="color:green;"><b>Status:</b> Moving...</p>
-
+      <a href="hospital.html" style="text-decoration: none;">
+        <button class="btn-hospital" style="width: 100%;">🏥 View Hospital ER Dashboard</button>
+      </a>
+    </div>
+  </div>
 </body>
 </html>

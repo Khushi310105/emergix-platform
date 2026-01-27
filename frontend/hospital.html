@@ -1,51 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hospital ER Dashboard – EMERGIX</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family: Arial; background-color:#eef2f5; padding:40px;">
+<body>
    <div class="navbar">
-  <b>EMERGIX</b>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="emergency.html">Emergency</a>
-    <a href="hospital.html">Hospital</a>
-    <a href="elderly-care.html">Elderly Care</a>
-  </div>
-</div>
+     <b>🚑 EMERGIX</b>
+     <div class="nav-links">
+       <a href="index.html">Home</a>
+       <a href="emergency.html">Emergency</a>
+       <a href="hospital.html">Hospital</a>
+       <a href="elderly-care.html">Elderly Care</a>
+     </div>
+   </div>
 
-  <h1 style="color:#1976d2;">🏥 Hospital ER Dashboard</h1>
-  <p>Pre-arrival emergency alerts and patient readiness</p>
+   <div class="container">
+     <div class="hero-text">
+       <h1>🏥 Hospital ER Dashboard</h1>
+       <p>Real-time emergency alerts and pre-arrival patient readiness</p>
+     </div>
 
-  <hr>
+     <hr>
 
-  <h2 style="color:#d32f2f;">🚨 Incoming Emergency Alert</h2>
+     <h2 style="text-align: center; color: white;">🚨 Incoming Emergency Alert</h2>
 
-  <p><b>Ambulance ETA:</b> 8 minutes</p>
-  <p><b>Ambulance Type:</b> Advanced Life Support (ALS)</p>
+     <div class="form-section">
+       <h3 style="color: #d32f2f;">Ambulance Information</h3>
+       <p><strong>Ambulance ETA:</strong> 8 minutes</p>
+       <p><strong>Ambulance Type:</strong> Advanced Life Support (ALS)</p>
+       <p><strong>Route Status:</strong> Optimal route calculated, traffic-aware</p>
 
-  <hr>
+       <hr style="margin: 20px 0;">
 
-  <h3>🧍 Patient Summary</h3>
-  <ul>
-    <li><b>Age:</b> 62</li>
-    <li><b>Conscious:</b> No</li>
-    <li><b>Breathing:</b> Severe difficulty</li>
-    <li><b>Bleeding:</b> No</li>
-  </ul>
+       <h3>🧍 Patient Summary</h3>
+       <ul style="list-style: none; padding: 0;">
+         <li style="padding: 8px 0;"><strong>Age:</strong> 62 years</li>
+         <li style="padding: 8px 0;"><strong>Conscious:</strong> No</li>
+         <li style="padding: 8px 0;"><strong>Breathing:</strong> Severe difficulty</li>
+         <li style="padding: 8px 0;"><strong>Bleeding:</strong> No</li>
+       </ul>
 
-  <hr>
+       <hr style="margin: 20px 0;">
 
-  <h3>🩺 ER Preparation Status</h3>
-  <ul>
-    <li>✔ Trauma bed reserved</li>
-    <li>✔ Cardiac team alerted</li>
-    <li>✔ Emergency equipment ready</li>
-  </ul>
+       <h3>✅ ER Preparation Status</h3>
+       <ul style="list-style: none; padding: 0;">
+         <li style="padding: 8px 0;">✔ Trauma bed reserved</li>
+         <li style="padding: 8px 0;">✔ Cardiac team alerted</li>
+         <li style="padding: 8px 0;">✔ Emergency equipment ready</li>
+         <li style="padding: 8px 0;">✔ Respiratory specialist on standby</li>
+       </ul>
 
-  <button class="btn-hospital" style="padding:10px;">✅ Mark ER Ready</button>
-
+       <button class="btn-hospital" style="margin-top: 20px;">✅ Mark ER Ready</button>
+     </div>
+   </div>
 </body>
 </html>

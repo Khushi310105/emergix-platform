@@ -1,66 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elderly Care Services – EMERGIX</title>
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family: Arial; background-color:#f1f8e9; padding:40px;">
+<body>
   <div class="navbar">
-  <b>EMERGIX</b>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="emergency.html">Emergency</a>
-    <a href="hospital.html">Hospital</a>
-    <a href="elderly-care.html">Elderly Care</a>
+    <b>🚑 EMERGIX</b>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="emergency.html">Emergency</a>
+      <a href="hospital.html">Hospital</a>
+      <a href="elderly-care.html">Elderly Care</a>
+    </div>
   </div>
-</div>
 
-  <h1 style="color:#388e3c;">👵 Post-Emergency Elderly Care</h1>
+  <div class="container">
+    <div class="hero-text">
+      <h1>👵 Post-Emergency Elderly Care</h1>
+      <p>
+        Compassionate aftercare ensuring continued recovery even after hospital discharge, 
+        especially for elderly patients living alone.
+      </p>
+    </div>
 
-  <p>
-    Emergix ensures continued care even after hospital discharge,
-    especially for elderly patients living alone.
-  </p>
+    <hr>
 
-  <hr>
+    <h2 style="text-align: center;">Available Care Services</h2>
 
-  <h2>Available Care Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>🩺 Daily Health Monitoring</h3>
+        <p>Professional health checks, vital sign monitoring, and progress tracking throughout recovery.</p>
+      </div>
+      
+      <div class="card">
+        <h3>💊 Medication Support</h3>
+        <p>Automated reminders, proper medication administration, and adherence tracking.</p>
+      </div>
+      
+      <div class="card">
+        <h3>🍽 Feeding & Hygiene</h3>
+        <p>Assistance with meals, personal hygiene, and grooming with dignity and care.</p>
+      </div>
+      
+      <div class="card">
+        <h3>🚶 Mobility Support</h3>
+        <p>Physical therapy, mobility assistance, and recovery exercises for faster rehabilitation.</p>
+      </div>
+      
+      <div class="card">
+        <h3>📞 Emergency Check-ins</h3>
+        <p>24/7 availability for emergencies with quick response and coordination with hospitals.</p>
+      </div>
+      
+      <div class="card">
+        <h3>👨‍👩‍👧 Family Coordination</h3>
+        <p>Regular updates to family members and care coordination for peace of mind.</p>
+      </div>
+    </div>
 
-  <ul>
-    <li>🩺 Daily health monitoring</li>
-    <li>💊 Medication reminders</li>
-    <li>🍽 Feeding & hygiene assistance</li>
-    <li>🚶 Mobility & recovery support</li>
-    <li>📞 Emergency check-ins</li>
-  </ul>
+    <hr>
 
-  <hr>
+    <div class="form-section">
+      <h2 style="color: #333;">📋 Book a Caregiver</h2>
 
-  <h3>Book a Caregiver</h3>
+      <form>
+        <div class="form-group">
+          <label for="name">Patient Name:</label>
+          <input type="text" id="name" placeholder="Enter patient name" required>
+        </div>
 
-  <form>
-    <label>Patient Name:</label><br>
-    <input type="text"><br><br>
+        <div class="form-group">
+          <label for="duration">Care Duration:</label>
+          <select id="duration" required>
+            <option value="">-- Select duration --</option>
+            <option value="1week">1 Week</option>
+            <option value="2weeks">2 Weeks</option>
+            <option value="1month">1 Month</option>
+            <option value="3months">3 Months</option>
+            <option value="longterm">Long-term Care</option>
+          </select>
+        </div>
 
-    <label>Care Duration:</label><br>
-    <select>
-      <option>1 Week</option>
-      <option>2 Weeks</option>
-      <option>1 Month</option>
-    </select><br><br>
+        <div class="form-group">
+          <label for="service">Preferred Service:</label>
+          <select id="service" required>
+            <option value="">-- Select service --</option>
+            <option value="recovery">Recovery Care</option>
+            <option value="medication">Medication Support</option>
+            <option value="fulltime">Full-time Assistance</option>
+            <option value="combined">Combined Services</option>
+          </select>
+        </div>
 
-    <label>Preferred Service:</label><br>
-    <select>
-      <option>Recovery Care</option>
-      <option>Medication Support</option>
-      <option>Full-time Assistance</option>
-    </select><br><br>
-
-    <button class="btn-care">
-      📋 Request Care Service
-    </button>
-  </form>
-
+        <button class="btn-care">
+          📋 Request Care Service
+        </button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
